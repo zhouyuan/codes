@@ -1,0 +1,39 @@
+#se the startup message
+startup_message off
+#term xterm
+##use ` as the Global Key
+escape ^Zz
+## escape ``
+##set a biger buffer
+defscrollback 4096
+#hardstatus alwayslastline                                                                                                                   
+
+shelltitle "$|bash"
+#hardstatus string '%{= kG}[ %{G}%c:%s %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{kB} %d/%m %{w}%c %{g}]'
+#caption always '%{=b cw}%-w%{=rb db}%>%n %t%{-}%+w%{-b}%< %{= kG}%-=%D %c%{-}'
+#caption always "%{= R}[ %{=b b}%-w%{=rb db}%>%n %t%{-}%+w%{-b}%< %=%{R}][%{M}%D %M %d %{G}%c%{R}]"
+#hardstatus string '%{gk}[ %{G}%H %{g}][%= %{wk}%?%-Lw%?%{=b kR}(%{W}%n*%f %t%?(%u)%?%{=b kR})%{= kw}%?%+Lw%?%?%= %{g}]%{=b C}[ %m/%d %c:%s ]%{W}'
+#caption always "%{= kw}%-w%{= kG}%{+b}[%n %t]%{-b}%{= kw}%+w %=%d %M %0c %{g}%H%{-}" 
+#caption always "%{+b yk}%H %{wk}|%c %{bk}%d.%m.%Y %{wk}| %{rk}%72=Load: %l%{wk}"
+hardstatus alwayslastline "%?%{yk}%-Lw%?%{wb}%n*%f %t%?(%u)%?%?%{yk}%+Lw%?"
+# Hardstatus line
+# hardstatus alwayslastline
+# hardstatus string "%{= R}[ %{=b b}%-w%{=rb db}%>%n %t%{-}%+w%{-b}%< %=%{R}]"
+#
+#
+#
+
+#hardstatus alwayslastline
+#hardstatus string "%{= B}:%{= b}: %{= r}[ %{G}%H%{= r} ] %= %{=b b}%-w%{=rb db}%>%n %t%{-}%+w %=%{= r}[ %{G}%c %{M}%D %m-%d %{r}] %{= b}:%{B}:"
+
+#
+vbell off
+
+## w to show the window list
+bind w windowlist -b
+bind ^w windowlist -b
+##initial apps to run
+screen
+screen
+screen
+select 0
